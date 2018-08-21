@@ -141,7 +141,7 @@ def main():
     ax.set_zlim3d(0, 100)
     
     initial_state = [0, 0, 0, 0.0, 0., 0.0, 0, 0, 0, 0, 0, 0]
-    tester = Tester(initial_state, 0, '../configs/aerosonde.yaml', ax, T_sim=15.0, dt = 1.0/200.0)
+    tester = Tester(initial_state, 0, 'configs/aerosonde.yaml', ax, T_sim=15.0, dt = 1.0/200.0)
     tester.test_autopilot(72.0, 0, 500, animate = True)
     #tester.test_trim(35.0, 0.025, 100, 15000, animate = True)
     tester.plot()
