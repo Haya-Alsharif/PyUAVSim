@@ -1,8 +1,7 @@
 # PyUAVSim
 Light weight Python simulator for small UAVs
 
-
-Completed Feature List:
+## Completed Feature List:
 1. Autopilot for fixed wing
 2. Sensors (GPS, IMU) with error models
 3. Path following and Path manager implemented
@@ -10,12 +9,18 @@ Completed Feature List:
 
 The simulator is near complete with all the necessary bare minimum functional implementation. It should be straightforward to extend its functionality. Feel free to email me (av.sarath@gmail.com) if you have any questions
 
-Extensions:
 
+## How to run:
+1) Navigate to PyUAVSim directory
+2) If you are using conda environments, activate the one with python 2.7. In my case, that is `source activate py27`
+2) Install requirements using `pip install -r requirements.txt`
+3) Run a sample code provided with the simulator`python -m examples.trim_and_autopilot`
+
+## Extensions:
 1. State estimation using kalman filter/variants
 2. Pathplanner class with RRT 
 3. Wind models is not there due to their slightly complex nature - this will be added at the very end
 4. support for quadrotos
 
-
-Reference: Small Unmanned Arcraft - Theory and Practice by Randal W. Beard and Timothy W. McLain
+## Reference: 
+Small Unmanned Arcraft - Theory and Practice by Randal W. Beard and Timothy W. McLain
